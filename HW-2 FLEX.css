@@ -1,0 +1,44 @@
+.flex {
+    flex-direction: column;
+}
+.flex1 {
+
+     border: 2px solid black;;
+     font-family: Bradley Hand, cursive;
+     font-size: 9px;
+     background: rgb(185, 233, 172);
+     width: 796px;
+     height: 66px;
+     margin-right: 8px;
+
+}
+.flex2 {
+    border: 2px solid black;;
+    font-family: Bradley Hand, cursive;
+    background: #31B00E;
+    width: 796px;
+    height: 526px;
+    margin-right: 8px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+.item1 {
+    border: 2px solid black;;
+    font-family: Bradley Hand, cursive;
+    background: rgb(115, 223, 85);
+    width: 600px;
+    height: 100px;
+    margin-right: 8px;
+}
+.name {
+    font-family: Bookman, URW Bookman L, serif;
+    align-content: flex-start;
+}
+.type1 {
+    width: 100px;
+    height: 100px;
+    background: rgb(185, 233, 172);;
+    border: 3px solid black;
+}
