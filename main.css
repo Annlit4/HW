@@ -1,6 +1,12 @@
 * {
     font-size:20px;
 }
+.main-img {
+    float: left;
+    margin-left: 40%;
+}
+
+.clear{clear:both;}
 p { text-align: center }
 h1 { text-align: center }
 div { text-align: center }
@@ -10,6 +16,13 @@ h1 {
 #level1 {
     font-size: 40px;
 }
-.label {
-    
+.muk {
+    font-size: 35px;
+    font-weight: bold;
+    display: block;
+    color: purple;
+    font-family:Impact, Charcoal, sans-serif;
 }
+body{
+    background: url(111.jpg);
+   }
