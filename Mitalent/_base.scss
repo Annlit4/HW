@@ -1,0 +1,19 @@
+.flex-container {
+display: flex;
+align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    height: 32px;
+
+    .site-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 28px;
+    }
+}
+
+
+
