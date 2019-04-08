@@ -33,7 +33,7 @@ flex {
     font-family: Bookman, URW Bookman L, serif;
     align-content: flex-start;
 }
-.item2 {
+.CircleBase {
     width: 100px;
     height: 100px;
     background: rgb(185, 233, 172);;
