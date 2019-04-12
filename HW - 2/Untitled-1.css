@@ -18,6 +18,8 @@
     background: #31B00E;
     width: 796px;
     height: 526px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
 }
 .flex3 {
     border: 2px solid black;;
@@ -43,13 +45,12 @@
     border: 1px solid black;;
     font-family: Bradley Hand, cursive;
     background: rgb(115, 223, 85);
-    width: 560px;
+    width: 580px;
     height: 100px;
 }
 .name {
     font-family: Bookman, URW Bookman L, serif;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 }
 .type1 {
     width: 100px;
@@ -73,7 +74,7 @@
     margin-right: 10px
 }
 .circle {
-    border: 2px solid black;;
+    border: 2px solid black;
     font-family: Bradley Hand, cursive;
     font-size: 15px;
     background: rgb(185, 233, 172);
@@ -93,4 +94,20 @@
         height: 70px;
         justify-content: center;
         margin-top: 50px;
+    }
+    .right-block {
+        flex-direction: column; 
+        font-family: Bradley Hand, cursive;
+        background: #31B00E;
+        width: 596px;
+        height: 120px;
+        padding-left: 10px;
+        border-left: 2px solid black;
+    }
+
+    .line1 {
+        width: 796px;
+        height: 120px;
+        font-family: Bradley Hand, cursive;
+        background: #31B00E;
     }
