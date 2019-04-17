@@ -841,12 +841,28 @@ header .search-controls {
   margin-left: 240px;
 }
 
+.third-screen .exp {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .third-screen .explore {
   width: 138px;
   height: 11px;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 2.8px;
   margin-top: 63px;
   margin-left: 240px;
+  margin-right: 22px;
+}
+
+.third-screen .fas fa-long-arrow-alt-right {
+  width: 18px;
+  height: 14px;
 }
 /*# sourceMappingURL=site.css.map */

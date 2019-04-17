@@ -384,14 +384,23 @@ img {
     margin-left: 240px;
 
 }
+.exp {
+    flex-direction: row;
+    align-items: flex-end;
+}
 .explore {
     width: 138px;
     height: 11px;
     @extend .nunito-extrabold;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 2.8px;
     $primary-color: #1a1a1d;
     margin-top: 63px;
     margin-left: 240px;
+    margin-right: 22px;
+}
+.fas fa-long-arrow-alt-right {
+    width: 18px;
+    height: 14px;
 }
 }
