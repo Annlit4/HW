@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.nunito-regular, .nunito-semibold, .second-screen .british-award, .nunito-extrabold, .link-font, .second-screen .choice-item, .third-screen .explore, .second-screen .article, .third-screen .article-date {
+.nunito-regular, .nunito-semibold, .second-screen .british-award, .nunito-extrabold, .link-font, .second-screen .choice-item, .third-screen .explore, .fourth-screen .text-exp, .fourth-screen .site-title, .second-screen .article, .third-screen .article-date, .fourth-screen .text, .fourth-screen .sign-up, .fourth-screen .content {
   font-family: 'Nunito', sans-serif;
 }
 
@@ -349,11 +349,11 @@ template {
   font-weight: 600;
 }
 
-.nunito-extrabold, .link-font, .second-screen .choice-item, .third-screen .explore {
+.nunito-extrabold, .link-font, .second-screen .choice-item, .third-screen .explore, .fourth-screen .text-exp, .fourth-screen .site-title {
   font-weight: 800;
 }
 
-.poppins-regular, .poppins-medium, .third-screen .article-text1, .third-screen .article-text2, .second-screen .profile, .second-screen .short-review, .third-screen .on-press {
+.poppins-regular, .poppins-medium, .third-screen .article-text1, .third-screen .article-text2, .second-screen .profile, .second-screen .short-review, .third-screen .on-press, .fourth-screen .head {
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
 }
@@ -517,6 +517,11 @@ header .search-controls {
   position: absolute;
   left: 50%;
   bottom: 0;
+  opacity: 0.7;
+}
+
+.first-screen .fas.fa-long-arrow-alt-right.disabled {
+  margin-left: 50px;
 }
 
 .first-screen .slide-content {
@@ -567,10 +572,6 @@ header .search-controls {
   font-size: 14px;
   letter-spacing: 2.8px;
   text-transform: uppercase;
-}
-
-.first-screen .fas.fa-long-arrow-alt-right.disabled {
-  margin-left: 50px;
 }
 
 .second-screen {
@@ -679,7 +680,7 @@ header .search-controls {
           justify-content: center;
 }
 
-.second-screen i {
+.second-screen .social-networks i {
   width: 16px;
   height: 16px;
   right: 112px;
@@ -852,17 +853,235 @@ header .search-controls {
 }
 
 .third-screen .explore {
-  width: 138px;
-  height: 11px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2.8px;
   margin-top: 63px;
   margin-left: 240px;
   margin-right: 22px;
 }
 
-.third-screen .fas fa-long-arrow-alt-right {
+.third-screen .explore i {
   width: 18px;
   height: 14px;
+}
+
+body {
+  width: 1920px;
+}
+
+.fourth-screen {
+  height: 1266px;
+  position: relative;
+}
+
+.fourth-screen .similar-clients {
+  height: 344px;
+  position: relative;
+}
+
+.fourth-screen .fourth-right-block {
+  width: 50%;
+  left: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.fourth-screen .head {
+  font-size: 60px;
+  margin-left: 242px;
+  margin-top: 116px;
+}
+
+.fourth-screen .line {
+  width: 140px;
+  height: 2px;
+  background-color: #1a1a1d;
+  margin-left: 242px;
+  margin-top: 49px;
+  position: absolute;
+}
+
+.fourth-screen .fourth-left-block {
+  width: 50%;
+  right: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.fourth-screen .text {
+  font-size: 16px;
+  color: #767679;
+  margin-left: 140px;
+  margin-top: 125px;
+}
+
+.fourth-screen .exp {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 63px;
+}
+
+.fourth-screen .text-exp {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.fourth-screen .arrow {
+  margin-left: 22px;
+}
+
+.fourth-screen .arrow i {
+  height: 15px;
+  width: 18px;
+}
+
+.fourth-screen .photo-block {
+  height: 490px;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fourth-screen .photo-clients {
+  width: 420px;
+  height: 100%;
+}
+
+.fourth-screen .photo-clients:nth-child(even) {
+  background-color: #e2e8e8;
+}
+
+.fourth-screen .photo-clients:nth-child(odd) {
+  background-color: #d3dcdc;
+}
+
+.fourth-screen .console {
+  height: 202px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fourth-screen .circle {
+  cursor: pointer;
+  background-color: #b4d3d3;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 73px;
+}
+
+.fourth-screen .circle.active {
+  width: 12px;
+  height: 12px;
+  background-color: #b4d3d3;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 20px;
+  position: relative;
+  margin-top: 70px;
+}
+
+.fourth-screen footer {
+  height: 230px;
+  width: 100%;
+}
+
+.fourth-screen .top {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.fourth-screen .site-title {
+  font-size: 26px;
+  letter-spacing: 2.8px;
+  left: 61px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.fourth-screen .news {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  right: 0;
+}
+
+.fourth-screen .sign-up {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+.fourth-screen .vertical-line {
+  width: 1px;
+  height: 40px;
+  background-color: #b4d3d3;
+  margin-right: 50px;
+  position: relative;
+}
+
+.fourth-screen .letter {
+  margin-right: 61px;
+}
+
+.fourth-screen .letter i {
+  width: 20px;
+  height: 16px;
+}
+
+.fourth-screen .border {
+  height: 2px;
+  margin-left: 60px;
+  background-color: #f5f5f5;
+  width: 1800px;
+}
+
+.fourth-screen .bottom {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.fourth-screen .content {
+  font-size: 15px;
+  color: #77777e;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+}
+
+.fourth-screen .socialnetworks {
+  position: absolute;
+  top: 50%;
+  right: 61px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fourth-screen .socialnetworks i {
+  margin-left: 40px;
+  width: 16px;
+  height: 16px;
 }
 /*# sourceMappingURL=site.css.map */

@@ -1,5 +1,4 @@
 .flex {
-    flex-direction: column;
     width: 796px;
     height: 596px;
     border: 2px solid black;
@@ -9,14 +8,12 @@
     font-family: Bradley Hand, cursive;
     font-size: 9px;
     background: rgb(185, 233, 172);
-    width: 796px;
     height: 66px;
 }
 .flex2 {
     border: 2px solid black;;
     font-family: Bradley Hand, cursive;
     background: #31B00E;
-    width: 796px;
     height: 526px;
     flex-wrap: wrap;
     overflow-y: scroll;
@@ -46,7 +43,7 @@
     font-family: Bradley Hand, cursive;
     background: rgb(115, 223, 85);
     width: 580px;
-    /*height: 100px;*/
+    margin-bottom: 10px;
 }
 .name {
     font-family: Bookman, URW Bookman L, serif;
@@ -90,7 +87,6 @@
         font-family: Bradley Hand, cursive;
         background:#31B00E;
         width: 100px;
-        height: 70px;
         justify-content: center;
         margin-top: 5px;
     }
