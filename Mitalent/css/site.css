@@ -576,23 +576,18 @@ header .search-controls {
 }
 
 .second-screen {
-  height: 1186px;
-  position: relative;
+  height: 946px;
+  flex-direction: row;
+  padding: 120px;
 }
 
-.second-screen .photo-content {
-  position: absolute;
-  height: 100%;
+.photo-content {
   width: 50%;
-  left: 0;
 }
 
 .second-screen .photo-slider {
   width: 649px;
   height: 948px;
-  position: absolute;
-  left: 120px;
-  bottom: 120px;
   background-color: #e2e8e8;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -624,51 +619,50 @@ header .search-controls {
 }
 
 .second-screen .profile-information {
-  position: absolute;
-  height: 100%;
   width: 50%;
-  right: 0;
+  flex-direction: row;
 }
 
 .second-screen .choice-line {
-  width: 437px;
   height: 9px;
-  top: 211px;
-  left: 0px;
-  position: absolute;
+  margin-top: 91px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .second-screen .profile-content {
-  position: absolute;
-  height: 100%;
   width: 50%;
-  left: 0;
+  position: relative;
 }
 
 .second-screen .choice-item {
   font-size: 12px;
   letter-spacing: 2.4px;
-  color: #696970;
+  color:#696970;
   text-decoration: unset;
 }
 
-.second-screen .underline {
+.second-screen .choice-item.active {
+  color:#1a1a1d;
+}
+
+.choice-item:hover {
+  color:#1a1a1d;
+}
+
+.choice-item.active:before {
+  content: '';
   width: 120px;
   height: 2px;
-  color: #1a1a1d;
-  top: 236px;
+  background-color:#1a1a1d;
   position: absolute;
-  left: -26px;
+  margin-top: 25px;
+  left: -25px;
 }
 
 .second-screen .social-networks {
-  position: absolute;
-  height: 100%;
   width: 50%;
-  right: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -684,9 +678,8 @@ header .search-controls {
 .second-screen .social-networks i {
   width: 16px;
   height: 16px;
-  right: 112px;
   margin-top: 40px;
-  margin-right: 112px;
+  transform: translateX(50%);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -699,14 +692,10 @@ header .search-controls {
   font-size: 16px;
   line-height: 30px;
   color: #767679;
-  position: absolute;
 }
 
 .second-screen .profile-header {
-  height: 185px;
-  width: 407px;
-  position: absolute;
-  top: 368px;
+  margin-top: 148px;
 }
 
 .second-screen .profile {
@@ -724,13 +713,13 @@ header .search-controls {
   width: 22px;
   height: 21px;
   bottom: 0;
-  position: absolute;
   margin-top: unset;
   margin-right: 20px;
 }
 
 .second-screen .british-award {
   font-size: 16px;
+  margin-bottom: 61px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
